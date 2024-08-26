@@ -1,6 +1,6 @@
 #!/bin/bash
 
 
-DATE=$(+%Fdate)
+DATE=$(%Fdate)
 
 echo "Today date is $DATE"
