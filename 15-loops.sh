@@ -29,7 +29,7 @@ for package in $@ #$@ refers to all arguments to pass it
 do 
     dnf list installed $package
     if[ $? -ne 0 ]
-    then    
+    then
         echo "$package is not installed , going to install it..."
         dng install $package -y
         VALIDATE $? "Installing $package"
