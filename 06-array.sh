@@ -2,4 +2,4 @@
 
 FRUITS=("APPLE" "BANANA" "ORANGE" "CHIPS")
 
-echo "All Fruits $FRUITS"
+echo "All Fruits $FRUITS[0]"
