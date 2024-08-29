@@ -1,9 +1,10 @@
 #!/bin/bash
 
-FRUITS=("MANGO" "KIWI" "ORANGE")
 
+FRUITS=("APPLE" "KIWI" "ORANGE")
 
-echo "all fruit is: ${FRUITS[@]}"
+echo "First fruit is $FRUITS[0]"
+echo "Second fruit is $FRUITS[1]"
+echo "Third fruit is ${FRUITS[2]}"
 
-
-
+echo "All Fruits is ${FRUITS[@]}"
