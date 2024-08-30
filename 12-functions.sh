@@ -23,24 +23,24 @@ dnf list installed git
 
 VALIDATE $? "Listing Git"
 
-# if [ $? -ne 0 ] #if not equal to 0  means 1 or any number we have to install it
-# then
-#     echo "Git is not installed ,going to install it ..."
-#     dnf install git -y
+ if [ $? -ne 0 ] #if not equal to 0  means 1 or any number we have to install it
+ then
+    echo "Git is not installed ,going to install it ..."
+     dnf install git -y
       VALIDATE $? "Installing Git"
-# else #if equal to 0 means true
-#     echo "Git is Already installed, nothing to do .."
-# fi
+ else #if equal to 0 means true
+     echo "Git is Already installed, nothing to do .."
+ fi
 
-# dnf list installed mysql
+ dnf list installed mysql
 
-# if [ $? -ne 0 ]
-# then
-#     echo "Mysql is not installed,going to install it..,"
-#     dnf install mysql -y
-#     VALIDATE $? "Installing MYSQL"
-# else 
-#     echo "MYSQL is already installed ,nothing to do"
-# fi
+ if [ $? -ne 0 ]
+ then
+     echo "Mysql is not installed,going to install it..,"
+     dnf install mysql -y
+     VALIDATE $? "Installing MYSQL"
+ else 
+     echo "MYSQL is already installed ,nothing to do"
+ fi
 
 
