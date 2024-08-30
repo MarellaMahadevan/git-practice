@@ -6,7 +6,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo"Please run this script with root Previliges"
+    echo "Please run this script with root Previliges"
 fi
 
 dnf install git -y
