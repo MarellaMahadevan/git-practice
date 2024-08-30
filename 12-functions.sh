@@ -5,6 +5,7 @@ USERID=$(id -u)
 #echo "UserID is : $USERID"
 
 VALIDATE(){
+    
     if [ $? -ne 0]
     then 
         echo "$2 is Failed.."
