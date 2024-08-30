@@ -10,12 +10,12 @@ then
     exit 1
 fi
 
-dnf list installed git
+dnf list installed gittt
 
 if [ $? -ne 0 ] #if not equal to 0  means 1 or any number we have to install it
 then
     echo "Git is not installed ,going to install it ..."
-    dnf install git -y
+    dnf install gittt -y
     if [ $? -ne 0 ]
     then 
         echo "Git installation is not success ,check it"
