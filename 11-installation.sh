@@ -12,7 +12,7 @@ fi
 
 dnf list installed git
 
-if [$? -ne 0] #if not equal to 0  means 1 or any number we have to install it
+if [ $? -ne 0 ] #if not equal to 0  means 1 or any number we have to install it
 then
     echo "Git is not installed ,going to install it ..."
     dnf install git -y
