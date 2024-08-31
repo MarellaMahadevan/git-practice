@@ -26,7 +26,8 @@ VALIDATE(){
 
 CHECK_ROOT
 
-for package in $@  #refers to all arguments  passed to it
-do 
-
+#sh 15-loops.sh git mysql postfix nginx
+for package in $@ #$@ refers to all arguments to pass it
+do
+    echo "output: $package"
 done
