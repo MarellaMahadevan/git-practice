@@ -30,9 +30,19 @@ VALIDATE(){
     else 
         echo -e "$2 is $G Success.. $N"$>>$LOG_FILE
     fi
+} 
+
+USAGE(){
+    echo "USAGE :: sudo sh 16-redirectors.sh package1 package2"
+    exit 1
 }
 
 CHECK_ROOT
+
+if[ $# -eq 0 ]
+then
+    USAGE
+fi
 
 for package in $@ #$@ refers to all arguments to pass it
 do
